@@ -15,8 +15,8 @@
     - Retourne une chaîne contenant l'identifiant et le nom du capteur, formatée comme [id] nom.
 ## Classe CapteurTemperature
 - Héritage :
- - Hérite de la classe Capteur.
- - Représente un capteur spécialisé pour la température.
+  - Hérite de la classe Capteur.
+  - Représente un capteur spécialisé pour la température.
 - Méthode redéfinie :
   - obtenirDonnees() :
     - Appelle obtenirDonnees() de la classe parent (super.obtenirDonnees()) pour mettre à jour la date.
