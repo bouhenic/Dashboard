@@ -31,3 +31,22 @@
   - Appelle obtenirDonnees() de la classe parent pour mettre à jour la date.
   - Génère une humidité aléatoire entre 0 et 100 (arrondie à 2 décimales).
   - Retourne une chaîne formatée comme Humidité : xx.xx%.
+## Classe Dashboard
+- Rôle : Gère la liste des capteurs, leur affichage et les interactions avec l'interface utilisateur.
+- Propriétés :
+ - capteurs : Tableau contenant les objets capteurs.
+- Méthodes :
+ - ajouterCapteur(capteur) :
+  - Ajoute un capteur au tableau capteurs.
+  - Met à jour l'affichage en appelant afficherCapteurs().
+ - supprimerCapteur(id) :
+  -Supprime le capteur correspondant à l’id donné.
+   Met à jour l'affichage en appelant afficherCapteurs().
+ - afficherCapteurs() :
+  - Sélectionne le conteneur HTML avec l'ID dashboard.
+  - Réinitialise son contenu (innerHTML = "").
+  - Pour chaque capteur dans capteurs :
+   - Crée un élément <div> représentant le capteur.
+   - Ajoute un bouton "Supprimer" avec une fonction onclick pour appeler supprimerCapteur.
+ - mettreAJourDonnees() :
+  - Parcourt tous les capteurs et met à jour les données affichées pour chacun en remplaçant le contenu de l'élément HTML correspondant.
