@@ -34,7 +34,7 @@
 ## Classe Dashboard
 - Rôle : Gère la liste des capteurs, leur affichage et les interactions avec l'interface utilisateur.
 - Propriétés :
- - capteurs : Tableau contenant les objets capteurs.
+  - capteurs : Tableau contenant les objets capteurs.
 - Méthodes :
  - ajouterCapteur(capteur) :
   - Ajoute un capteur au tableau capteurs.
