@@ -45,6 +45,15 @@ Représente un capteur générique avec des propriétés et des méthodes commun
 ---
 
 ### 2. Classe `CapteurTemperature`
+```bash
+class CapteurTemperature extends Capteur {
+    obtenirDonnees() {
+      super.obtenirDonnees();
+      const temperature = (Math.random() * 30).toFixed(2);
+      return `Température : ${temperature}°C`;
+    }
+  }
+```
 
 #### Héritage
 Hérite de la classe `Capteur` et représente un capteur spécialisé pour la température.
@@ -54,11 +63,17 @@ Hérite de la classe `Capteur` et représente un capteur spécialisé pour la te
   - Appelle `obtenirDonnees()` de la classe parent (`super.obtenirDonnees()`) pour mettre à jour la date.
   - Génère une température aléatoire entre 0 et 30 (arrondie à 2 décimales).
   - Retourne une chaîne formatée comme : `Température : xx.xx°C`.
-
 ---
-
 ### 3. Classe `CapteurHumidite`
-
+```bash
+class CapteurHumidite extends Capteur {
+    obtenirDonnees() {
+      super.obtenirDonnees();
+      const humidite = (Math.random() * 100).toFixed(2);
+      return `Humidité : ${humidite}%`;
+    }
+  }
+```
 #### Héritage
 Hérite de la classe `Capteur` et représente un capteur spécialisé pour l'humidité.
 
@@ -67,7 +82,6 @@ Hérite de la classe `Capteur` et représente un capteur spécialisé pour l'hum
   - Appelle `obtenirDonnees()` de la classe parent pour mettre à jour la date.
   - Génère une humidité aléatoire entre 0 et 100 (arrondie à 2 décimales).
   - Retourne une chaîne formatée comme : `Humidité : xx.xx%`.
-
 ---
 
 ### 4. Classe `Dashboard`
