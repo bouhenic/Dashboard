@@ -8,7 +8,8 @@ Ce projet met en place un système de gestion de capteurs génériques et spéci
 ## Classes et Fonctionnalités
 
 ### 1. Classe `Capteur`
-`class Capteur {
+```bash
+class Capteur {
     constructor(id, nom) {
       this.id = id;
       this.nom = nom;
@@ -24,6 +25,7 @@ Ce projet met en place un système de gestion de capteurs génériques et spéci
       return `[${this.id}] ${this.nom}`;
     }
   }
+```bash
 #### Rôle
 Représente un capteur générique avec des propriétés et des méthodes communes.
 
