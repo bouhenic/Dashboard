@@ -23,7 +23,7 @@ Ce projet met en place un système de gestion de capteurs génériques et spéci
     afficherInfos() {
       return `[${this.id}] ${this.nom}`;
     }
-  }`
+  }
 #### Rôle
 Représente un capteur générique avec des propriétés et des méthodes communes.
 
