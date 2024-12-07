@@ -159,7 +159,31 @@ Gère la liste des capteurs, leur affichage et les interactions avec l'interface
 ---
 
 ### 5. Fonctionnalités du Tableau de Bord
-
+ ```bash
+ // Création du dashboard
+  const dashboard = new Dashboard();
+  
+  // Fonctions pour gérer les capteurs dans le front
+  let compteurId = 1;
+  
+  function ajouterCapteurTemperature() {
+    const capteurTemp = new CapteurTemperature(compteurId++, "Capteur Température");
+    dashboard.ajouterCapteur(capteurTemp);
+  }
+  
+  function ajouterCapteurHumidite() {
+    const capteurHumidite = new CapteurHumidite(compteurId++, "Capteur Humidité");
+    dashboard.ajouterCapteur(capteurHumidite);
+  }
+  
+  function supprimerCapteur(id) {
+    dashboard.supprimerCapteur(id);
+  }
+  
+  function mettreAJourDonnees() {
+    dashboard.mettreAJourDonnees();
+  }
+```
 Les fonctions suivantes permettent d’interagir avec le tableau de bord via l'interface utilisateur :
 
 - **`ajouterCapteurTemperature()`** :
