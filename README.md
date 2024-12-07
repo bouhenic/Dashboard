@@ -202,10 +202,48 @@ Les fonctions suivantes permettent d’interagir avec le tableau de bord via l'i
 ---
 
 ### 6. Interaction avec le DOM
+```bash
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Capteurs</title>
+  <style>
+    #dashboard {
+      display: flex;
+      flex-wrap: wrap; /* Permet de passer à la ligne si l'espace manque */
+      gap: 10px; /* Espacement entre les capteurs */
+    }
 
+    .capteur {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 5px;
+      width: 300px;
+      box-sizing: border-box; /* S'assure que padding et border sont inclus dans la largeur */
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Dashboard des Capteurs</h1>
+
+  <div id="dashboard">
+    <!-- Les capteurs seront affichés ici -->
+  </div>
+
+  <button onclick="ajouterCapteurTemperature()">Ajouter Capteur Température</button>
+  <button onclick="ajouterCapteurHumidite()">Ajouter Capteur Humidité</button>
+  <button onclick="mettreAJourDonnees()">Mettre à jour les données</button>
+
+  <script src="dashboard.js"></script>
+
+</body>
+</html>
 - Le tableau de bord est lié à une div HTML avec l’ID `dashboard`.
 - Lors de l’ajout ou de la suppression d’un capteur, le tableau de bord met à jour cette div pour refléter les changements.
-
+```
 ---
 
 ### 7. Évolution Dynamique
