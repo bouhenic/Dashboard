@@ -1,9 +1,9 @@
 # Dashboard
+![Texte alternatif](classes.svg)
 ## Classe Capteur
-![Texte alternatif](mqtt.drawio.svg)
-Rôle : Représente un capteur générique avec des propriétés et des méthodes communes.
-Propriétés :
-id : Identifiant unique du capteur.
+- Rôle : Représente un capteur générique avec des propriétés et des méthodes communes.
+- Propriétés :
+  - id : Identifiant unique du capteur.
 nom : Nom du capteur.
 dateDerniereLecture : Stocke la date/heure de la dernière lecture des données.
 Méthodes :
