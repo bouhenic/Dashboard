@@ -25,6 +25,7 @@ class Capteur {
       return `[${this.id}] ${this.nom}`;
     }
   }
+```
 
 #### Rôle
 Représente un capteur générique avec des propriétés et des méthodes communes.
