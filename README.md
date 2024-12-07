@@ -36,12 +36,12 @@
 - Propriétés :
   - capteurs : Tableau contenant les objets capteurs.
 - Méthodes :
- - ajouterCapteur(capteur) :
-  - Ajoute un capteur au tableau capteurs.
-  - Met à jour l'affichage en appelant afficherCapteurs().
- - supprimerCapteur(id) :
-  -Supprime le capteur correspondant à l’id donné.
-   Met à jour l'affichage en appelant afficherCapteurs().
+  - ajouterCapteur(capteur) :
+   - Ajoute un capteur au tableau capteurs.
+   - Met à jour l'affichage en appelant afficherCapteurs().
+  - supprimerCapteur(id) :
+   - Supprime le capteur correspondant à l’id donné.
+   - Met à jour l'affichage en appelant afficherCapteurs().
  - afficherCapteurs() :
   - Sélectionne le conteneur HTML avec l'ID dashboard.
   - Réinitialise son contenu (innerHTML = "").
