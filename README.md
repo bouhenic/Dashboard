@@ -1,4 +1,4 @@
-# # Gestion des Capteurs et Tableau de Bord
+# Gestion des Capteurs et Tableau de Bord
 ![Texte alternatif](classes.svg)
 
 Ce projet met en place un système de gestion de capteurs génériques et spécialisés (température et humidité) via un tableau de bord interactif. Les capteurs génèrent des données dynamiques affichées sur une interface utilisateur simple.
