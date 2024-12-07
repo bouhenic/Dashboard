@@ -85,7 +85,52 @@ Hérite de la classe `Capteur` et représente un capteur spécialisé pour l'hum
 ---
 
 ### 4. Classe `Dashboard`
-
+```bash
+class Dashboard {
+    constructor() {
+      this.capteurs = [];
+    }
+  
+    ajouterCapteur(capteur) {
+      this.capteurs.push(capteur);
+      this.afficherCapteurs();
+    }
+  
+    supprimerCapteur(id) {
+      this.capteurs = this.capteurs.filter(capteur => capteur.id !== id);
+      this.afficherCapteurs();
+    }
+  
+    afficherCapteurs() {
+      const dashboardDiv = document.getElementById("dashboard");
+      dashboardDiv.innerHTML = ""; // Réinitialiser l'affichage
+  
+      this.capteurs.forEach(capteur => {
+        const capteurDiv = document.createElement("div");
+        capteurDiv.className = "capteur";
+        capteurDiv.id = `capteur-${capteur.id}`;
+  
+        capteurDiv.innerHTML = `
+          <h3>${capteur.nom}</h3>
+          <p>${capteur.afficherInfos()}</p>
+          <p id="data-${capteur.id}">${capteur.obtenirDonnees()}</p>
+          <button onclick="supprimerCapteur(${capteur.id})">Supprimer</button>
+        `;
+  
+        dashboardDiv.appendChild(capteurDiv);
+      });
+    }
+  
+    mettreAJourDonnees() {
+      this.capteurs.forEach(capteur => {
+        const dataElement = document.getElementById(`data-${capteur.id}`);
+        if (dataElement) {
+          dataElement.innerText = capteur.obtenirDonnees();
+        }
+      });
+    }
+  }
+```
 #### Rôle
 Gère la liste des capteurs, leur affichage et les interactions avec l'interface utilisateur.
 
