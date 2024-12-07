@@ -241,9 +241,9 @@ Les fonctions suivantes permettent d’interagir avec le tableau de bord via l'i
 
 </body>
 </html>
+```
 - Le tableau de bord est lié à une div HTML avec l’ID `dashboard`.
 - Lors de l’ajout ou de la suppression d’un capteur, le tableau de bord met à jour cette div pour refléter les changements.
-```
 ---
 
 ### 7. Évolution Dynamique
