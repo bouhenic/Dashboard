@@ -8,7 +8,22 @@ Ce projet met en place un système de gestion de capteurs génériques et spéci
 ## Classes et Fonctionnalités
 
 ### 1. Classe `Capteur`
-
+`class Capteur {
+    constructor(id, nom) {
+      this.id = id;
+      this.nom = nom;
+      this.dateDerniereLecture = null;
+    }
+  
+    obtenirDonnees() {
+      this.dateDerniereLecture = new Date();
+      return "Données du capteur";
+    }
+  
+    afficherInfos() {
+      return `[${this.id}] ${this.nom}`;
+    }
+  }`
 #### Rôle
 Représente un capteur générique avec des propriétés et des méthodes communes.
 
