@@ -19,9 +19,9 @@
  - Représente un capteur spécialisé pour la température.
 - Méthode redéfinie :
   - obtenirDonnees() :
-   - Appelle obtenirDonnees() de la classe parent (super.obtenirDonnees()) pour mettre à jour la date.
-   - Génère une température aléatoire entre 0 et 30 (arrondie à 2 décimales).
-   - Retourne une chaîne formatée comme Température : xx.xx°C.
+    - Appelle obtenirDonnees() de la classe parent (super.obtenirDonnees()) pour mettre à jour la date.
+    - Génère une température aléatoire entre 0 et 30 (arrondie à 2 décimales).
+    - Retourne une chaîne formatée comme Température : xx.xx°C.
 ## Classe CapteurHumidite
 - Héritage :
   - Hérite de la classe Capteur.
